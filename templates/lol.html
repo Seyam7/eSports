@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}League of Legends{% endblock title %}
+
+{% block body %}
+
+<div class="container my-3">
+<h1 class="my-4 text-center">League of Legends</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+        <img src="https://source.unsplash.com/1200x450/?Teams" class="d-block w-100" alt="...">
+            
+            <div class="card-body">
+              <p class="card-text">Teams</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="/teams2">
+                    <input type="submit" value="View" />
+                  </form>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://source.unsplash.com/1200x450/?Players" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Players</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="/players2">
+                    <input type="submit" value="View" />
+                  </form>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://source.unsplash.com/1200x450/?Tournaments" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Tournaments</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="/tournaments2">
+                    <input type="submit" value="View" />
+                  </form>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+{% endblock body %}

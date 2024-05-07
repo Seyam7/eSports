@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}CSGO | Registration{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0 mb-3" >
+    <img src="/static/Csgo.jpg" class="d-block w-100 mx-0" alt="...">
+</div>
+<div class="container mb-3 py-4">
+    <h1 class="text-center">Register</h1>
+    <form method="post" action="/faceit">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="pname">Player Name</label>
+            <input type="text" class="form-control" id="pname" name="pname" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+            <label for="tname">Team Name</label>
+            <input type="text" class="form-control" id="tname" name="tname" placeholder="Enter your Team Name">
+        </div>
+
+        <div class="form-group">
+            <label for="femail">Email address</label>
+            <input type="femail" class="form-control" id="femail" name="femail" placeholder="Enter Your Email">
+        </div>
+        
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+</div>
+
+{% endblock body %}
