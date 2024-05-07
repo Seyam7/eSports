@@ -1,0 +1,36 @@
+from django.contrib import admin
+from django.urls import path
+from home import views
+
+urlpatterns = [
+    path("", views.index, name='home'),
+    path("about", views.about, name='about'),
+    path("contact", views.contact, name='contact'), 
+    path('login',views.loginUser, name="login"),
+    path('logout',views.logoutUser, name="logout"),
+    path('register',views.registerUser, name="register"),
+    path('counterStrike',views.counterStrike, name="counterStike"),
+    path('lol',views.lol, name="lol"),
+    path('cod',views.cod, name="cod"),
+    path('teams',views.teams, name="teams"),
+    path('teams2',views.teams2, name="teams2"),
+    path('teams3',views.teams3, name="teams3"),
+    path('players',views.players, name="players"),
+    path('players2',views.players2, name="players2"),
+    path('players3',views.players3, name="players3"),
+    path('tournaments',views.tournaments, name="tournaments"),
+    path('tournaments2',views.tournaments2, name="tournaments2"),
+    path('tournaments3',views.tournaments3, name="tournaments3"),
+    path('tournamentsCompleted',views.tournamentsCompleted, name="tournamentsCompleted"),
+    path('tournamentsCompleted2',views.tournamentsCompleted2, name="tournamentsCompleted2"),
+    path('tournamentsCompleted3',views.tournamentsCompleted3, name="tournamentsCompleted3"),
+    path('upcomingTournaments',views.upcomingTournaments, name="upcomingTournaments"),
+    path('upcomingTournaments2',views.upcomingTournaments2, name="upcomingTournaments2"),
+    path('upcomingTournaments3',views.upcomingTournaments3, name="upcomingTournaments3"),
+    path('faceit',views.faceit, name="faceit"),
+    path('eleague',views.eleague, name="eleague"),
+    path('faceit2',views.faceit2, name="faceit2"),
+    path('eleague2',views.eleague2, name="eleague2"),
+    path('dreamhack',views.dreamhack, name="dreamhack"),
+    path('esl',views.esl, name="esl"),
+]
